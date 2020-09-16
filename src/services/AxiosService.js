@@ -1,4 +1,4 @@
-import Axios from "axios";
+import Axios from 'axios'
 
 export const api = Axios.create({
   baseURL: '//bcw-sandbox.herokuapp.com/api/',

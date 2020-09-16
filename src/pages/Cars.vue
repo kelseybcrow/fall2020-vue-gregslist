@@ -81,10 +81,15 @@
   </main>
 </template>
 
+
+
+
+
 <script>
-import Car from "../components/Car.vue"
+import Car from '../components/Car.vue'
+
 export default {
-  name: "Cars",
+  name: 'Cars',
   mounted() {
     this.$store.dispatch('getAllCars')
   },
@@ -100,12 +105,10 @@ export default {
   },
   methods: {
     createCar() {
-      this.$store.dispatch("createCar", this.newCar)
-      // PROTIP the object retains reference so we cant just reset it we will need to reset the form instead
+      this.$store.dispatch('CreateCar', this.newCar)
       for (let key in this.newCar) {
         this.newCar[key] = null
       }
-
     }
   },
   components: {
@@ -113,6 +116,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
