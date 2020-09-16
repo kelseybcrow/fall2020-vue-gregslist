@@ -3,7 +3,9 @@ import VueRouter from 'vue-router'
 import CarDetails from '../pages/CarDetails.vue'
 import Cars from '../pages/Cars.vue'
 
+
 Vue.use(VueRouter)
+
 
 const routes = [
   {
@@ -22,8 +24,11 @@ const routes = [
   }
 ]
 
+
+
 const router = new VueRouter({
   routes
 })
+
 
 export default router
